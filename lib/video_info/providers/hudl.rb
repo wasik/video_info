@@ -4,7 +4,7 @@ class VideoInfo
   module Providers
     class Hudl < Provider
       def self.usable?(url)
-        url =~ %r{(hudl\.com\/(video).*)}x
+        url =~ %r{(hudl\.com\/(video|v).*)}x
       end
 
       def provider
@@ -49,7 +49,7 @@ class VideoInfo
         #%r{(?:vkontakte\.ru\/video|vk\.com\/video
         #            |vk\.com\/.*?video)(-?\d+_\d+)}i
 
-        %r{(?:hudl\.com\/video)\/(.+)}x
+        %r{(?:hudl\.com\/(video|v))\/([a-zA-Z0-9]+)}x
       end
 
       def _default_iframe_attributes
