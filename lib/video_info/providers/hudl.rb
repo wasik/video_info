@@ -21,22 +21,26 @@ class VideoInfo
 
       def thumbnail_small
         #"https://i.ytimg.com/vi/#{video_id}/default.jpg"
-        "/assets/video_thumb.jpg"
+        #"/assets/video_thumb.jpg"
+        return nil
       end
 
       def thumbnail_medium
         #"https://i.ytimg.com/vi/#{video_id}/mqdefault.jpg"
-        "/assets/video_thumb.jpg"
+        #"/assets/video_thumb.jpg"
+        return nil
       end
 
       def thumbnail_large
         #"https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
-        "/assets/video_thumb.jpg"
+        #"/assets/video_thumb.jpg"
+        return nil
       end
 
       def thumbnail_maxres
         #"https://i.ytimg.com/vi/#{video_id}/maxresdefault.jpg"
-        "/assets/video_thumb.jpg"
+        #"/assets/video_thumb.jpg"
+        return nil
       end
 
       private
